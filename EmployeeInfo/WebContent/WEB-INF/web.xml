@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EmployeeInfo</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>jsp/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/loginAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmployeeAddAction</servlet-name>
+    <servlet-class>com.action.EmployeeAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeAddAction</servlet-name>
+    <url-pattern>/employeeAddAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmployeeSearchAction</servlet-name>
+    <servlet-class>com.action.EmployeeSearchAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeSearchAction</servlet-name>
+    <url-pattern>/employeeSearchAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmployeeEditAction</servlet-name>
+    <servlet-class>com.action.EmployeeEditAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeEditAction</servlet-name>
+    <url-pattern>/employeeEditAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmployeeUpdateAction</servlet-name>
+    <servlet-class>com.action.EmployeeUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeUpdateAction</servlet-name>
+    <url-pattern>/employeeUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmployeeDeleteAction</servlet-name>
+    <servlet-class>com.action.EmployeeDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeDeleteAction</servlet-name>
+    <url-pattern>/employeeDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

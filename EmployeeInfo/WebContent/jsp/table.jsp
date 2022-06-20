@@ -1,0 +1,106 @@
+<html>
+	<head>
+	<script type="text/javascript">
+	</script>
+	
+	<title>Employee logout Screen</title>
+	</head>
+	<body>
+		<jsp:include page="header.jsp"></jsp:include>
+		<H2>Create Two Table as below in MySQL Database</H2>
+		<fieldset>
+			    <legend width="80%">employee</legend>
+				<table align="left" width="80%" height="" background="green" cellpadding="1" border="1">
+					<tr>
+						<th>Field</th>
+						<th>datatype</th>
+						<th>Null</th>
+						<th>Key</th>
+						<th>Extra</th>
+					</tr>
+					<tr>
+						<td>employeeid</td>
+						<td>int(10)</td>
+						<td>No</td>
+						<td>Primary</td>
+						<td>auto_increment</td>
+					</tr>
+					<tr>
+						<td>name</td>
+						<td>varchar(20)</td>
+						<td>No</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>gender</td>
+						<td>varchar(1)</td>
+						<td>Yes</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>location</td>
+						<td>varchar(45)</td>
+						<td>Yes</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>dateofbirth</td>
+						<td>date</td>
+						<td>Yes</td>
+						<td></td>
+						<td></td>
+					</tr>
+			</table>
+		 </fieldset>
+		<fieldset>
+			    <legend width="80%">user</legend>
+				<table align="left" width="80%" height="" background="green" cellpadding="1" border="1">
+					<tr>
+						<th>Field</th>
+						<th>datatype</th>
+						<th>Null</th>
+						<th>Key</th>
+						<th>Extra</th>
+					</tr>
+					<tr>
+						<td>userid</td>
+						<td>int(10)</td>
+						<td>No</td>
+						<td>Primary</td>
+						<td>auto_increment</td>
+					</tr>
+					<tr>
+						<td>username</td>
+						<td>varchar(45)</td>
+						<td>No</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>password</td>
+						<td>varchar(45)</td>
+						<td>No</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>emailid</td>
+						<td>varchar(45)</td>
+						<td>Yes</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>count</td>
+						<td>int(10)</td>
+						<td>Yes</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+		 </fieldset>
+	</body>
+</html>
